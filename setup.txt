@@ -4,8 +4,9 @@ El proyecto fue realizado en linux pero no deberia importar(No lo voy a probar e
 
     sudo /opt/lampp/lampp start
 
-2. Como la migracion ya esta creada, primero pon las siguientes credenciales
-en el .env
+2. En el panel de admin crea una base de datos llamada firstworkshop
+
+2. Ahora pon las siguientes credenciales en el .env
 
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
