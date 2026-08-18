@@ -1,0 +1,10 @@
+/* Here you import your css's */
+
+@import url('./app.css');
+@import url('./home.css');
+@import url('./navbar.css');
+@import url('./form.css');
+@import url('./orders.css');
+@import url('./order.css');
+
+/*? There is not name collition validation */

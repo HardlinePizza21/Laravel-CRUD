@@ -1,0 +1,22 @@
+.form-card {
+    background: rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--glass-border);
+    border-right: 2px solid var(--glass-border);
+    padding: 1rem 0;
+}
+
+.form-card-header{
+    margin: 0;
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+    font-weight: 700;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.form-card h6 {
+    margin: 1.25rem auto 10;
+    color: var(--text-soft);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}

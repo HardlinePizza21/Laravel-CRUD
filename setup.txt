@@ -1,0 +1,30 @@
+El proyecto fue realizado en linux pero no deberia importar(No lo voy a probar en windows, quiteme de una vez el 5 :-< ):
+
+1. Lo primero es arrancar el XAMPP o  LAMPP o MAMP, yo uso LAMPP y se corre de la siguiente manera:
+
+    sudo /opt/lampp/lampp start
+
+2. Como la migracion ya esta creada, primero pon las siguientes credenciales
+en el .env
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=firstworkshop
+    DB_USERNAME=root
+    # DB_PASSWORD=root
+
+(Yo dejo DB_PASSWORD comentada porque asi me funciona)
+
+2. Ahora ejecuta 
+
+    php artisan migrate
+
+y para tener datos sinteticos usado
+
+    php artisan db:seed
+
+
+3. Por ultimo ejecuta el proyecto con
+
+    php artisan serve

@@ -1,0 +1,92 @@
+.orders-section {
+    padding: 3rem 1rem;
+}
+
+.orders-header {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 2.5rem;
+}
+
+.orders-header .eyebrow {
+    margin: 0 0 0.75rem;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.orders-header h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+}
+
+.orders-header p {
+    margin: 1rem auto 0;
+    color: var(--text-soft);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.order-card {
+    border: 1px solid var(--secondary-btn-border);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.14);
+}
+
+.order-card .img-card {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.order-card .card-body {
+    padding: 1.25rem 1rem;
+}
+
+.order-status-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--primary-btn);
+    color: var(--primary-btn-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.order-status-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    color: var(--primary-btn-text);
+}
+
+.order-date {
+    margin: 0.6rem 0 0;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 576px) {
+    .order-status-btn {
+        width: 100%;
+    }
+}

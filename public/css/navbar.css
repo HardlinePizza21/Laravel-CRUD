@@ -1,0 +1,55 @@
+.app-navbar{
+    position: relative;
+    z-index: 1;
+}
+
+.app-navbar {
+    background: rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0;
+}
+
+.app-brand,
+.app-nav-link {
+    color: var(--text-main) !important;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.app-brand {
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.app-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.app-nav-link {
+    opacity: 0.85;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.app-nav-link:hover,
+.app-brand:hover {
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .app-nav {
+        gap: 0.8rem;
+    }
+
+    .app-brand,
+    .app-nav-link {
+        font-size: 0.75rem;
+    }
+}
